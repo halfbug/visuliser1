@@ -1,63 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link href="/css/layout.css" rel="stylesheet" type="text/css">
+    <title>{{ config('app.name', 'Visulizer') }}</title>
 
-    </head>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/cover.css') }}" rel="stylesheet">
+</head>
     <body>
-    <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
-        <div class="navbar-toggler animate">
-            <span class="menu-icon"></span>
-        </div>
-        <ul class="navbar-menu animate">
-            <li>
-                <a href="#about-us" class="animate">
-                    <span class="desc animate"> Who We Are </span>
-                    <span class="glyphicon glyphicon-user"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#blog" class="animate">
-                    <span class="desc animate"> What We Say </span>
-                    <span class="glyphicon glyphicon-info-sign"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact-us" class="animate">
-                    <span class="desc animate"> How To Reach Us </span>
-                    <span class="glyphicon glyphicon-comment"></span>
-                </a>
-            </li>
-        </ul>
-    </nav>
 
-    <!-- START OF HTML FOR DEMO - NOT NEEDED -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
-                <h1 class="title">Minimal Menu</h1>
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Stile</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="inner cover">
+                    <h1 class="cover-heading">Cover your page.</h1>
+                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+                    </p>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                    </div>
+                </div>
+
             </div>
+
         </div>
-        <div class="row">
-            <div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 white-background">
-                <p>Please keep in mind that this menu uses no javascript and may not work properly in all browsers. I have only tested it on chrome.</p>
-                <p><em><strong>ReliQ</strong></em> has confirmed this works for "Firefox". Thanks!</p>
-                <p>This menu was made in about 45 minutes so it is bound to have some bugs. Test it out and let me know what you think in the comments below.</p>
-                <p>To view this snippet in fullscreen click on the button in the top right hand corner or if you are in fullscreen click on the same button to return to Bootsnipp!</p>
-                <p>Alright now back to playing Watch Dogs and Wolfenstein: The New Order</p>
-            </div>
-        </div>
+
     </div>
-    <a href="http://bootsnipp.com/iframe/PbDb5" class="btn btn-primary" id="fullscreen" data-toggle="tooltip" data-placement="left" title="Full Screen"><span class="glyphicon glyphicon-fullscreen"></span></a>
-    <!-- END OF HTML FOR DEMO - NOT NEEDED -->
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
     </body>
 </html>
