@@ -26,3 +26,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/createvirtualroom', [
+    'uses'   =>  'VirtualRoom@create'
+
+]);
+
